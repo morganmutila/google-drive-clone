@@ -8,6 +8,7 @@ import UserSettingsDropdown from '@/Components/app/UserSettingsDropdown.vue';
 
 <template>
     <div class="h-screen flex gap-4 bg-gray-50 w-full">
+
         <Navigation/>
 
         <main class="flex flex-1 flex-col px-4 overflow-hidden">
@@ -19,6 +20,7 @@ import UserSettingsDropdown from '@/Components/app/UserSettingsDropdown.vue';
             <div class="flex flex-col flex-1 overflow-hidden bg-white rounded-2xl
 ">
                 <slot />
+
             </div>
         </main>
 

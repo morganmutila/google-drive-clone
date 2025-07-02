@@ -3,6 +3,7 @@ import { Link } from '@inertiajs/vue3';
 import ApplicationLogo from '../ApplicationLogo.vue';
 import CreateNewDropdown from './CreateNewDropdown.vue';
 import NavLink from '@/Components/NavLink.vue';
+import { StarIcon, TrashIcon, UsersIcon, AtSymbolIcon, RectangleStackIcon } from '@heroicons/vue/20/solid';
 
 </script>
 
@@ -16,7 +17,7 @@ import NavLink from '@/Components/NavLink.vue';
             Google Drive Clone
         </div>
 
-        <div class="px-3 mx-3">
+        <div class="mx-3 mb-4">
             <CreateNewDropdown />
         </div>
 
@@ -25,30 +26,42 @@ import NavLink from '@/Components/NavLink.vue';
                 :href="route('dashboard')"
                 :active="route().current('dashboard')"
             >
+
+            <RectangleStackIcon class="h-5 w-5 text-gray-700 mr-1 flex" />
+
                 My files
             </NavLink>
 
             <NavLink
                 :href="route('dashboard')"
             >
+            <UsersIcon class="h-5 w-5 text-gray-700 mr-1 flex" />
+
                 Shared with me
             </NavLink>
 
             <NavLink
                 :href="route('dashboard')"
             >
+
+            <AtSymbolIcon class="h-5 w-5 text-gray-700 mr-1 flex" />
+
                 Shared by me
             </NavLink>
 
             <NavLink
                 :href="route('dashboard')"
             >
+            <StarIcon class="h-5 w-5 text-gray-700 mr-1 flex" />
+
                 Starred
             </NavLink>
 
             <NavLink
                 :href="route('dashboard')"
             >
+            <TrashIcon class="h-5 w-5 text-gray-700 mr-1 flex" />
+
                 Trash
             </NavLink>
         </div>
